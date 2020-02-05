@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                "Frequently Bought Food",
+                "All Restaurants",
                 style: TextStyle(
                     fontFamily: 'SFPro',
                     fontSize: 18.0,

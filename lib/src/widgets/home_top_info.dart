@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomeTopInfo extends StatelessWidget {
@@ -25,15 +27,7 @@ class HomeTopInfo extends StatelessWidget {
                     color: Colors.orangeAccent),
               ),
               SizedBox(
-                height: 20,
-              ),
-              Text(
-                "What would",
-                style: textStyle,
-              ),
-              Text(
-                "You like to eat?",
-                style: textStyle,
+                height: 10,
               ),
             ],
           ),

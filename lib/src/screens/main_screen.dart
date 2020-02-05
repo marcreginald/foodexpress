@@ -6,6 +6,8 @@ import 'package:foodexpress/src/pages/order_page.dart';
 import 'package:foodexpress/src/pages/category_page.dart';
 import 'package:foodexpress/src/pages/profile_page.dart';
 
+import 'homescreen.dart';
+
 class MainScreen extends StatefulWidget {
   MainScreen({Key key}) : super(key: key);
 
@@ -19,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> pages;
   Widget currentPage;
 
-  HomePage homePage;
+  HomeScreen homePage;
   OrderPage orderPage;
   CategoryPage categoryPage;
   ProfilePage profilePage;
@@ -28,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    homePage = HomePage();
+    homePage = HomeScreen();
     orderPage = OrderPage();
     categoryPage = CategoryPage();
     profilePage = ProfilePage();

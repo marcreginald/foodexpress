@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:foodexpress/src/widgets/bought_food.dart';
 import 'package:foodexpress/src/widgets/food_category.dart';
@@ -5,7 +7,7 @@ import 'package:foodexpress/src/widgets/home_top_info.dart';
 import 'package:foodexpress/src/widgets/search_field.dart';
 
 //Data
-import 'data/food_data.dart';
+import 'package:foodexpress/src/data/food_data.dart';
 import 'package:foodexpress/src/models/food_model.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -24,11 +26,22 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
         children: <Widget>[
           HomeTopInfo(),
-          FoodCategory(),
+          SearchField(),
+          SizedBox(
+            height: 30.0,
+          ),
+          Text(
+            "Free Devlivery Offers From foodexpress 😍",
+            style: TextStyle(
+              fontFamily: 'SFPro',
+              fontSize: 15.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           SizedBox(
             height: 20.0,
           ),
-          SearchField(),
+          FoodCategory(),
           SizedBox(
             height: 20.0,
           ),
@@ -36,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                "Frequently Bought Food",
+                "All Restaurants",
                 style: TextStyle(
                     fontFamily: 'SFPro',
                     fontSize: 18.0,

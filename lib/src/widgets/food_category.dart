@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:foodexpress/src/models/category_model.dart';
 import 'food_card.dart';
 //Data
-import '../data/category_data.dart';
+import 'package:foodexpress/src/data/category_data.dart';
 
 //Model
-import '../models/category_model.dart';
+import 'package:foodexpress/src/models/category_model.dart';
 
 class FoodCategory extends StatelessWidget {
   final List<Category> _categories = categories;
@@ -13,7 +13,7 @@ class FoodCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80.0,
+      height: 100.0,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: _categories.length,
